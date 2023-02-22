@@ -1,6 +1,6 @@
 {
-  "name": "powerstack-explorer",
-  "description": "PowerStack GraphQL Explorer",
+  "name": "niftnory-explorer",
+  "description": "Niftnory GraphQL Explorer",
   "license": "MIT",
   "version": "0.0.1",
   "main": "index.js",

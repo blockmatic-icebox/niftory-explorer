@@ -8,7 +8,7 @@ class ApiRequestDetails extends Component {
       <div className={styles.apiRequestWrapper + ' ' + styles.apiContentPadd} style={{padding:0, border:0}}>
         {/* <div className={styles.apiRequestContent}>{this.props.description}</div> */}
         <div className={styles.apiHasura}>
-          <a href="https://github.com/blockmatic/powerstack-explorer" target={'_blank'}>
+          <a href="https://github.com/blockmatic/niftnory-explorer" target={'_blank'}>
             <i className="fa fa-github" />
           </a>
         </div>

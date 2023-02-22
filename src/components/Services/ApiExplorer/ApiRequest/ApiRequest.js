@@ -171,7 +171,7 @@ class ApiRequest extends Component {
 
       return (
         <CollapsibleToggle
-          title={'PowerStack Provider Endpoint'}
+          title={'Niftnory Provider Endpoint'}
           isOpen={endpointSectionIsOpen}
           toggleHandler={toggleHandler}
           useDefaultTitleStyle

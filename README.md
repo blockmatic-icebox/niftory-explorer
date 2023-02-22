@@ -1,12 +1,8 @@
-# PowerStack GraphiQL Explorer
+# Niftnory GraphiQL Explorer
 
-PowerStack GraphiQL Explorer
+Niftnory GraphiQL Explorer
 
-https://explorer.powerstack.xyz
-
-## Credits
-
-This project is a fork of [hasura/graphiql-online](https://github.com/hasura/graphiql-online)
+https://explorer.niftnory.xyz
 
 ## Environment Variables
 
@@ -17,7 +13,7 @@ We use [dotenv](https://github.com/motdotla/dotenv) for setting environment vari
 ```
 PORT=3000
 NODE_ENV=development
-GRAPHQL_ENDPOINT=https://api.powerstack.xyz/v1/graphql
+GRAPHQL_ENDPOINT=https://api.niftory.com/v1/graphql
 HEADER_STRING='{}'
 VARIABLE_STRING='{}'
 QUERY_STRING=''
@@ -26,26 +22,30 @@ QUERY_STRING=''
 
 ```
 # Build the image
-docker build -t powerstack-explorer:local .
+docker build -t niftnory-explorer:local .
 
 # Start a container
-docker run --name powerstack-explorer --env-file .env -p 8080:8080 -d powerstack-explorer:local
+docker run --name niftnory-explorer --env-file .env -p 8080:8080 -d niftnory-explorer:local
 
 # Get container ID
-docker ps -aqf "name=^powerstack-explorer$"
+docker ps -aqf "name=^niftnory-explorer$"
 
 # Print app output
-docker logs -f powerstack-explorer
+docker logs -f niftnory-explorer
 
 # Stop, start, restart, kill
-docker stop powerstack-explorer
-docker start powerstack-explorer
-docker restart powerstack-explorer
-docker kill powerstack-explorer
+docker stop niftnory-explorer
+docker start niftnory-explorer
+docker restart niftnory-explorer
+docker kill niftnory-explorer
 ```
 ## Contributing
 
 Read the [contributing guidelines](https://developers.blockmatic.io) for details.
+
+## Credits
+
+This project is a fork of [hasura/graphiql-online](https://github.com/hasura/graphiql-online)
 
 ## Blockmatic
 

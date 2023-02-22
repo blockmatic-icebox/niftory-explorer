@@ -6,28 +6,28 @@ silent: true
 tasks:
   build:
     cmds:
-      - docker build -t powerstack-explorer:local .
+      - docker build -t niftnory-explorer:local .
 
   run:
     cmds:
-      - docker run --name powerstack-explorer --env-file .env -p 8080:8080 -d powerstack-explorer:local
+      - docker run --name niftnory-explorer --env-file .env -p 8080:8080 -d niftnory-explorer:local
 
   id:
     cmds:
-      - docker ps -aqf "name=^powerstack-explorer$"
+      - docker ps -aqf "name=^niftnory-explorer$"
 
   stop:
     cmds:
-      - docker stop powerstack-explorer
+      - docker stop niftnory-explorer
 
   start:
     cmds:
-      - docker start powerstack-explorer
+      - docker start niftnory-explorer
 
   restart:
     cmds:
-      - docker restart powerstack-explorer
+      - docker restart niftnory-explorer
 
   kill:
     cmds:
-      - docker kill powerstack-explorer
+      - docker kill niftnory-explorer
