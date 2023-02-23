@@ -15,7 +15,8 @@
     "start-dev": "better-npm-run start-dev",
     "watch-client": "better-npm-run watch-client",
     "dev": "concurrently --kill-others \"npm run watch-client\" \"npm run start-dev\" ",
-    "deploy": "now"
+    "deploy": "now",
+    "serve": "serve ./static -p 3069"
   },
   "betterScripts": {
     "start-prod": {
@@ -27,7 +28,12 @@
       }
     },
     "start-dev": {
-      "command": "node -r dotenv/config ./bin/server.js"
+      "command": "node -r dotenv/config ./bin/server.js",
+      "env": {
+        "NODE_PATH": "./src",
+        "NODE_ENV": "development",
+        "PORT": 3069
+      }
     },
     "watch-client": {
       "command": "node -r dotenv/config webpack/webpack-dev-server.js"
@@ -69,6 +75,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
     "semver": "5.5.1",
+    "serve": "^11.0.0",
     "subscriptions-transport-ws": "^0.9.12",
     "valid-url": "^1.0.9"
   },

@@ -170,7 +170,10 @@ class ApiRequest extends Component {
       };
 
       return (
-        <CollapsibleToggle
+        <>
+    
+
+                <CollapsibleToggle
           title={'Niftnory Provider Endpoint'}
           isOpen={endpointSectionIsOpen}
           toggleHandler={toggleHandler}
@@ -217,6 +220,8 @@ class ApiRequest extends Component {
             <div className={styles.stickySeparator} />
           </div>
         </CollapsibleToggle>
+        </>
+
       );
     };
 

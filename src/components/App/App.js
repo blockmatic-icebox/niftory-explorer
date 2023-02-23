@@ -38,6 +38,7 @@ class App extends Component {
               spinner={false}
             />
           )}
+          <div style={{background: 'white', color:'orange'}}>HOLA</div>
           <div>{children}</div>
         </div>
       </ErrorBoundary>

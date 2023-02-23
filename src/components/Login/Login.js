@@ -15,7 +15,7 @@ class LoginComponent extends React.Component {
   render() {
     const { dispatch } = this.props;
         // redirect 
-    dispatch(updateGraphQLEndpoint('https://api.niftory.com/v1/graphql'));
+    dispatch(updateGraphQLEndpoint('https://graphql.api.niftory.com'));
     return (
       <div>
         {/* <div className="loginWrapper">

@@ -31,7 +31,7 @@ class ApiRequestWrapper extends Component {
         }
       >
         {getAPIRequestDetailsSection()}
-
+ 
         <ApiRequest
           bodyType={
             this.props.request.bodyType ? this.props.request.bodyType : ''

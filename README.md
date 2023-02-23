@@ -2,7 +2,7 @@
 
 Niftnory GraphiQL Explorer
 
-https://explorer.niftnory.xyz
+https://niftnory.bitcash.org
 
 ## Environment Variables
 
@@ -13,7 +13,7 @@ We use [dotenv](https://github.com/motdotla/dotenv) for setting environment vari
 ```
 PORT=3000
 NODE_ENV=development
-GRAPHQL_ENDPOINT=https://api.niftory.com/v1/graphql
+GRAPHQL_ENDPOINT=https://graphql.api.niftory.com
 HEADER_STRING='{}'
 VARIABLE_STRING='{}'
 QUERY_STRING=''
