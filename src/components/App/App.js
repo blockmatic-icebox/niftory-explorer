@@ -38,7 +38,10 @@ class App extends Component {
               spinner={false}
             />
           )}
-          <div style={{background: 'white', color:'orange'}}>HOLA</div>
+          <div style={{background: 'white', color:'orange', display: 'flex'}}>
+            
+            <button  onClick={()=>console.log('clicked')}style={{display: 'flex', alignSelf: 'flex-end'}} > Login </button>
+          </div>
           <div>{children}</div>
         </div>
       </ErrorBoundary>
